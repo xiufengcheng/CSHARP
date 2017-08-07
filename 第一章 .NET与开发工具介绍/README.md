@@ -1,17 +1,17 @@
 # **第一章  .NET与开发工具介绍**
 
 ## **.NET的由来**？
-<font color =brown>这是一个商业故事，事情还得从80年代说起...<br>当时个人电脑PC兴起，微软（[Microsoft], [DOS系统]）与因特尔（[Intel], 芯片制造商）组成的Wintel联盟所向披靡，它们踩在蓝色巨人[IBM]（PC机,大型机制造商,Fortran）的肩上发达起来......关于更早计算机应用的故事，请看电影[《隐藏人物》]。
+<font color = Brown>这是一个商业故事，事情还得从80年代说起...<br>当时个人电脑PC兴起，微软（[Microsoft], [DOS系统]）与因特尔（[Intel], 芯片制造商）组成的Wintel联盟所向披靡，它们踩在蓝色巨人[IBM]（PC机,大型机制造商,Fortran）的肩上发达起来......关于更早计算机应用的故事，请看电影[《隐藏人物》]。
 <br>整个80到90年代，微软Windows操作系统一度控制着整个PC市场，获得巨大成功
  <br><br><font color = black size =4> **Windows 1.0** (1983) </font> <br>![](./img/1.jpg) 
  <br><br><font color = black size =4> **Windows 2.0** (1987) </font> <br>![](./img/2.jpg) 
  <br><br><font color = black size =4> **Windows 3.0** (1992) </font> <br>![](./img/3.jpg) 
  <br><br><font color = black size =4> **Windows NT** (1993)  </font> <br>![](./img/5.jpg) 
 <br>微软的发展，被另外一家以生产浏览器软件而闻名的网景公司(Netscape)抢占了先机，它先于微软推出浏览器软件。他俩之间的事，参考[微软与Netscape之间的恩怨]...<br>
-    当时，[SUN]公司以生产UNIX服务器为主，这种服务器可以用于网站建设，所以它始终坚持"网络就是电脑"
-(The Network Is the Computer)的信条。当时，SUN公司也尝试设计一种名为Java的程序语言，一开始准备将其用在家用电器市场，因为Java代码灵活小巧，可移植性强，并能够跨平台操作(只需要装一个JAVA虚拟环境JVM，不同平台安装不同版本的JVM，Java只负责将.java翻译成.class,jvm将.class翻译成机器码，这样JAVA程序就能够被各种机器识别)，不局限于某种操作系统。<br>
-    1995年，互联网大行其道，SUN立刻意识到这是一个机会！因为Java语言结构新颖、可实时操作、而且安全
-性强，适合用于编写浏览器软件。由于SUN当时对开发软件产品尚缺乏信心，所以它免费将Java放在网上，任由人们使用，没有想到此举使Java获得极大的成功和好评。SUN公司的CEO斯科特·麦克尼利从此将自己称做是"JavaMan"。</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当时，[SUN]公司以生产UNIX服务器为主，这种服务器可以用于网站建设，所以它始终坚持"网络就是电脑"
+(The Network Is the Computer)的信条。当时，SUN公司也尝试设计一种名为Java的程序语言，一开始准备将其用在家用电器市场，因为Java代码灵活小巧，可移植性强，并能够跨平台操作(只需要装一个JAVA虚拟环境JVM，不同平台安装不同版本的JVM，Java只负责将.java翻译成.class,jvm将.class翻译成机器码，这样JAVA程序就能够被各种机器识别)，不局限于某种操作系统。
+ <br><br><font color = black size =4> **Java**</font> <br>![](./img/Java.jpg) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1995年，互联网大行其道，SUN立刻意识到这是一个机会！因为Java语言结构新颖、可实时操作、而且安全性强，适合用于编写浏览器软件。由于SUN当时对开发软件产品尚缺乏信心，所以它免费将Java放在网上，任由人们使用，没有想到此举使Java获得极大的成功和好评。SUN公司的CEO斯科特·麦克尼利从此将自己称做是"JavaMan"。</font>
 
 ### Microsoft. NET 战略
 * 让时光回到1995年...Java的问世极大的刺激了对于Windows平台应用极度看中的微软
