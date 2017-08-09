@@ -89,13 +89,13 @@
     - **轻量级编辑器，微软良心产品，推荐结合.NET Core使用**:purple_heart:
     - [VS Code 使用手册]
     - [VS Code on Git]
-- **查阅最新.NET Framework官方文档**
-    - **[中文.NETFramework链接]**
-    - **[英文.NETFramework链接]**
-    - **[所有产品目录]**
 
+## 查阅最新.NET Framework官方文档
+- [中文.NETFramework链接]
+- [英文.NETFramework链接]
+ - [所有产品目录]
 
-## 下面，我们就来用.NET Core + VS Code运行第一个C#程序吧!
+## 用VS Code + .NET Core运行第一个C#程序
 
 <!-- 下面是本文档中用到的链接 --->
 [《隐藏人物》]: https://baike.baidu.com/item/%E9%9A%90%E8%97%8F%E4%BA%BA%E7%89%A9/2454257?fr=aladdin
