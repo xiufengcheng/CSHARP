@@ -14,7 +14,35 @@
 ### <font color = red>[学生考勤分数记录]()</font>
 ---
 
-## 注意事项：
+## 参考书目
+
+- 《C#面向对象程序设计(最新版)》  人民邮电出版社  郑宇军
+- 《C#入门经典(最新版)》    清华大学出版社   Karli Watson
+- 《C#高级编程(最新版)》 清华大学出版社 Christian Nagel
+- 《C#4.0程序设计与项目实践》 清华大学出版社 张正礼
+
+---
+## 视频
+- Pluralight :Introduction to C#
+- 传智博客 C#视频         
+- 以及在MOOC, COURSERA, 慕课中国，51CTO，CSDN上的广泛视频
+
+---
+## 开发平台
+- 轻量级：Visual Studio Code(with .NET Core installed)
+- 重量级：Visual Studio 2017(with .NET Framework installed)
+
+---
+## 课堂形式
+### 课堂上
+- 面授
+- 阅读文章与编程
+### 课堂下
+- 练习
+- 项目小组协作与开发
+
+---
+分数评定：上课表现+课后作业+最终项目
 
 
 
