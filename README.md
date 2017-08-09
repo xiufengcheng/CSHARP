@@ -49,9 +49,9 @@
 
 ---
 
-## [<font color = red>学生考勤分数记录</font>](./)
+## [<font color = red>学生考勤分数记录</font>](./SCORE.md)
 
-## [<font color = red>课程大纲</font>]()
+## [<font color = red>课程大纲</font>](./OUTLINE.md)
 
 
 
