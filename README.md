@@ -49,7 +49,7 @@
 
 ---
 
-## [<font color = red>学生考勤分数记录</font>](./SCORE.md)
+## [<font color = red>学生考勤分数记录</font>](./SCORE.MD)
 
 ----
 # <p align ="center">课程大纲</p>
