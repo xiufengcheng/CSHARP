@@ -10,18 +10,18 @@
 &emsp;&emsp;微软的发展，被另外一家以生产浏览器软件而闻名的网景公司(Netscape)抢占了先机，它先于微软推出浏览器软件...当时，[SUN]公司以生产UNIX服务器为主，这种服务器可以用于网站建设，所以它始终坚持"网络就是电脑"
 (The Network Is the Computer)的信条。当时，SUN公司也尝试设计一种名为Java的程序语言，一开始准备将其用在家用电器市场，因为Java代码灵活小巧，可移植性强，并能够跨平台操作(只需要装一个JAVA虚拟环境JVM，不同平台安装不同版本的JVM，Java只负责将.java翻译成.class,jvm将.class翻译成机器码，这样JAVA程序就能够被各种机器识别)，不局限于某种操作系统。
  <br><br><font color = black size =4> **Java**</font> <br>![](./img/java.jpg) <br>
-1995年，互联网大行其道，SUN立刻意识到这是一个机会！因为Java适合用于编写浏览器软件。由于SUN当时对开发软件产品尚缺乏信心，所以它免费将Java放在网上，任由人们使用，没有想到此举使Java获得极大的成功和好评。微软为了打败Netscape，跟SUN达成某项交易，SUN允许微软使用Java言来开发IE浏览器，当IE成功问世时，微软将IE捆绑进操作系统中，使得很多电脑用户不得不使用IE作为缺省的浏览器软件。网景受到强烈的冲激，1996年春，网景拥有87%的市场占有率，1998年就降到40%，最后它也不得不免费供用户使用，终于在1998年11月，网景被美国在线(AOL)收购。<br><br>
+1995年，互联网大行其道，SUN立刻意识到这是一个机会。因为Java适合用于编写浏览器软件。由于SUN当时对开发软件产品尚缺乏信心，所以它免费将Java放在网上，任由人们使用，没有想到此举使Java获得极大的成功和好评。微软为了打败网景，跟SUN达成某项交易，SUN允许微软使用Java语言来开发IE浏览器（就是我们当前用的IE浏览器），当IE成功问世时，微软将IE捆绑进操作系统中，使得很多电脑用户不得不使用IE作为缺省的浏览器软件。网景受到强烈的冲激，1996年春，王景拥有87%的市场占有率，1998年就降到40%，最后它也不得不免费供用户使用，终于在1998年11月，网景被美国在线(AOL)收购。<br><br>
 &emsp;&emsp;**那么原本是亲密战友的SUN与微软是如何翻脸无情？以至Java最后也被Windows无情地抛弃呢？**
 
-&emsp;&emsp;1996年9月的某个星期日，微软资深的软件工程师提笔给比尔·盖茨写了一封信，在信中,他们非常恳切地提醒比尔·盖茨注意一个正在形成的威胁，这个威胁不是来自别人，正是其盟友SUN公司创建的一种编程语言--Java，这种语言允许编程者一次性编写程序代码、就可以在多个不同的操作系统上运行(如从IBM的大型机到Sun公司的Unix服务器，再到WindowsPC机都能运行，甚至在手机平台上也可以)；而不需要针对每个计算机硬件和操作系统配置的不同而改动程序代码，并且这种语言在网络上是安全的。在信中，他写到："必须意识到Java不仅仅是一种语言，如果它仅只是一种语言，对微软是不会造成威胁的。我们愿意并且能够容易地为它建立最佳的表现形式，事情可以圆满解决了。但是事实上，Java绝不仅仅是一种语言，它是COM的替代者。"--而COM恰恰是Windows基于的编程模型。"<br>
-&emsp;&emsp;盖茨在收到这封信时，正是他准备"闭关清修"的前几天，原来比尔·盖茨每年都要抽出一点时间来考虑微软长期发展战略，人称"思考周计划"。盖茨显然被这封信吓坏了，他第二天就回信了："这可把我吓坏了。我不清楚微软的操作系统要为Java的客户应用程序代码提供什么样的东西，而这些东西将足够让它来取代我们的市场地位。了解这一点非常重要，是应该最优先考虑的事情。"(没想到，这封信成为几年后司法部针对微软的反托拉斯案的呈堂证供。)于是，Java成了Windows中不受欢迎的客人，微软开始对其进行清扫，SUN又岂是好惹的？一场针尖对麦芒的好戏就开场了...一直持续到现在...<br>
+&emsp;&emsp;话说网景被收购后，它的一个项目Mozilla被发扬光大，发展成了今天的Firefox, Chrome等优秀的浏览器。。。这是后话。微软打败了网景后，并没有对SUN公司放松警惕，1996年9月的某个星期日，微软资深的软件工程师提笔给比尔·盖茨写了一封信，在信中,他们非常恳切地提醒比尔·盖茨注意一个正在形成的威胁，这个威胁不是来自别人，正是其盟友SUN公司创建Java，这种语言允许“**一次编写，到处运行**”（如从IBM的大型机到Sun公司的Unix服务器，再到WindowsPC机都能运行，甚至在手机平台上也可以，而不需要针对每个计算机硬件和操作系统配置的不同而改动程序代码），并且这种语言在网络上是安全的，并且支持面向对象OO程序设计。。。在信中，他写到："如果Java仅只是一种语言，对微软是不会造成威胁的。但是事实上，Java绝不仅仅是一种语言，它是COM的替代者。"--而COM恰恰是Windows基于的编程模型。"<br>
+&emsp;&emsp;盖茨第二天就回信了："**这可把我吓坏了。我不清楚微软的操作系统要为Java的程序员提供什么样的东西，而这些东西将足够让它来取代我们的市场地位。这是应该最优先考虑的事情**。"(没想到，这封信成为几年后司法部针对微软的反托拉斯案的呈堂证供。)于是，Java成了Windows中不受欢迎的客人，微软开始对其进行清扫，SUN又岂是好惹的？一场针尖对麦芒的好戏就开场了...一直持续到现在...<br>
 &emsp;&emsp;**首先出场的，便是微软于2000年6月推出的.NET计划...**
 </font>
 
 ## Microsoft. NET 战略
 - 由于Java的“**一次编程，到处使用**”特点，微软针对性的提出了.NET战略。
 - .NET战略基于[NGWS](Next Generation Windows Services)下一代视窗服务。
-- Microsoft预计, **.NET计划能将各种编程语言的程序员都统一到一个开发架构中来，使得他们的作品能运行在任何OS的任何浏览器上，并实现跨平台、跨语言开发。**
+- Microsoft预计, **.NET计划能将各种编程语言的程序员都统一到一个开发架构中来，使得他们的作品能运行在任何操作系统，任何浏览器上，并实现跨平台、跨语言开发。**
 - Microsoft基于以上理念打造.NET：
     - .NET 是一个基于因特网和 WEB 的全新架构
     - .NET 是用于通用服务（Universal Services）的一种构架
@@ -62,33 +62,82 @@
 - 直到今天的开源时代，Microsoft在2014年11月12日开放了.NET Framework的源码，并推出了[.NET Core]。
 - .NET Core是一个模块化的开发栈，是参考.NET Framework重新开发的.NET实现，它是未来的所有.NET平台的基础。
 - 同时，.NET Core将.NET 扩展为可在 Linux 和 Mac OS 平台上运行。
-- .NET [Core时将基于MIT开源许可协议发布]，其中将包括执行.NET代码所需的一切项目— - - CLR、JIT编译器、垃圾收集器（GC）和核心.NET基础类库。
+- .NET Core将基于MIT开源许可协议发布，其中将包括执行.NET代码所需的一切项目----CLR、JIT编译器、垃圾收集器（GC）和核心.NET基础类库。
 - 同时，微软还发布了Visual Studio 2013.NET（开源），使得VS在Linux和OS X系统上也能够运行了
 - 这样，开发者们将能够在全球三个最大的操作系统上使用.NET Framework了...
 <br><br><font color = black size =4> **.NET Core与. NET Framework的关系** </font> <br>![](./img/13.jpg)
-- 因此.NET Core可看成是.NET Framework实现真正跨平台开发的利器。基于它，微软退出了.ASP.NET Core, Xamarin等等，组成了Core生态...
+- **因此.NET Core可看成是.NET Framework实现真正跨平台开发的版本**。基于它，微软推出了.ASP.NET Core, Xamarin等等，组成了Core生态。。。
 <br><br><font color = black size =4>  </font> <br>![](./img/16.jpg)<br><br>
 
+
 ##.NET可以用来做什么
-- 
+- .NET可以做几乎任何事情
+<br>![](./img/安装什么.jpg)<br>
+
+## .NET Framework, .NET Core 与各版本Visual Studio之间的关系
+|Visual Studio版本  | .NET Framework版本 |适用OS       |C#版本| ASP.NET版本 | 新增功能 | 
+|:-----------------:| :---------------: |:----------: |:----:| :--------: |:--------:|  
+|Visual Studio 6.0  |无                 |windows NT   |无    | 无          |  MVC    |  
+|Visual Studio 2002 |.NET Framework 1.0 |Windows NT   |C#1.0 | 无          | .NET1.0        |       
+|Visual Studio 2003 |.NET Framework 1.1 |Windows XP   |C#1.2 | 无          | .NET1.1        |    
+|Visual Studio 2005 |.NET Framework 2.0 |Windows XP   |C#2.0 | 无          | 泛型     |  
+|Visual Studio 2008 |.NET Framework3.5  |Windows Vista|C#3.0 |ASP.NET 3.5  | WPF,WCF,LINQ |  
+|Visual Studio 2010 |.NET Framework4.0  |Windows 7    |C#4.0 |ASP.NET 4    | DLR,Silverligtht        |  
+|Visual Studio 2012 |.NET Framework4.5  |Windows 8    |C#5.0 |ASP.NET 4.5  |支持win8       |    
+|Visual Studio 2013 |.NET Framework4.6  |Windows 8    |C#6.0 |ASP.NET 4.5.1|支持app开发         |   
+|Visual Studio 2015 |.NET Fram+Core1.0  |Windows 10   |C#6.0 |ASP.NET 1.0  |Azure       |    
+|Visual Studio 2017 |.NET Core2.0       |Windows 10   |C#6.0 |ASP.NET 1.0  |Core        |    
 
 ## C#
 - 由上可知，.NET 框架支持多种语言，C#,VB,J#,C/C++
 - 与Java比较像(本来嘛，就是竞争产品)
-- 
+- C#是一种安全的、稳定的、简单的、优雅的，由C和C++衍生出来的面向对象的编程语言。它在继承C和C++强大功能的同时去掉了一些它们的复杂特性（例如没有宏和模版，不允许多重继承）。C#综合了VB简单的可视化操作和C++的高运行效率，以其强大的操作能力、优雅的语法风格、创新的语言特性和便捷的面向组件编程的支持成为.NET开发的首选语言。
+- C#的特点：
+1. 完全面向对象。
+2. 支持分布式，之所以有C#，是因为微软相信分布式应用程序是未来的趋势，即处理过程分布在客户机和服务器上。所以C#一出生就注定了能很好解决分布式问题。
+3. 跟Java类似，C#代码经过编译后，成为了一种IL（中间语言）。在运行时，再把IL编译为平台专用的代码。
+4. 健壮，C#在检查程序错误和编译与运行时错误一点也不逊于Java，C#也用了自动管理内存机制。
+5. C#不像Java那样完全摒弃了指针和手动内存管理。C#默认情况下是不能使用指针的，程序员在有必要时可以打开指针来使用。这样可以保证编程的灵活性。
+6. 安全性：C#的安全性是有.net平台来提供的。C#代码编译后成为IL语言。是一种受控代码，.net提供类型安全检查等机制保证代码是安全的。
+7. 可移植性：由于C#使用类似Java的中间语言机制。使得C#也跟Java类似，可以很方便的移植到其他系统。在运行时，再把中间代码编译为适合特定机器的代码。
+8. 解释性：C#也是一种特殊的解释性语言。
+9. 高性能：C#把代码编译成中间语言后，可以高效的执行程序。
+10. 多线程：与Java类似，可以由一个主进程分出多个执行小任务的多线程。
+11. 组件模式：C#很适合组件开发。各个组件可以由其他语言实现的，然后集成在.net中。
+- C#是在Java流行起来后所诞生的一种新的语言。由于微软在操作系统上占有很大的优势。在以往的开发中累积了不少经验，所形成的.net平台，所以C#在Windows方面可以说比Java具有更大的优势。如果单纯从技术上来讲，C#在网络编程上可以与Java匹敌。C#还在Windows Forms也有一定的优势。
+- C#是一种非常类似于C++的语言，风格是更接近于Java，不管是C++程序员还是Java程序员，都可以很方便的转到C#上来。
+- C#的强大是依赖于.net的发展，而.net的发展是看微软在.net上的决心和投入有多少。
+- C#目前主要是应用在网络编程上，其他领域比如数据库、窗体编程，都逐渐在增大。
+- 在Visual Studio中创建C#程序（实际上是创建解决方案->在其中创建工程->在其中创建c#程序）
+1. 首先双击visual studio的图标，打开初始界面。注意，如果你的是第一次打开，可能初始化的时间有点长，请耐心等待。启动后会出现类似于下图所示界面：
+<br>![](./img/CSHARP1.png)<br>
+2. 然后在起始页点击新建项目（或者点击"文件"->新建->项目），出现下图的界面：
+<br>![](./img/CSHARP2.png)<br>
+3. 在左侧选择visual C#，在中间选择控制台应用程序，下方可以更改程序名称和程序的存储位置，然后点击右下方的确定按钮，就出现下图了：
+<br>![](./img/CSHARP3.png)<br>
+
+```
+
+
+
+```
 
 ## ASP.NET Core
-- 与
+- [ASP.NET Core 介绍和项目解读](http://www.cnblogs.com/liangxiaofeng/p/5795239.html)
+
 ### IDEs
-<font color = black size =4> **Visual Studio IDE家族演变** </font> <br>![](./img/10.jpg)
+
 - **Visual Studio 2017** [download](https://www.visualstudio.com/zh-hans/)
-    - Community版
+    - **Community版(推荐)**
     - Professional版
     - Enterprise版
 - **Visual Studio Code** [download](https://code.visualstudio.com/)
     - **轻量级编辑器，微软良心产品，推荐结合.NET Core使用**:purple_heart:
-    - [VS Code 使用手册]
+    - [VS Code 使用手册](https://code.visualstudio.com/docs)
+    - [如何使用VSCode运行第一个C#程序<img src="./img/video.png" height="15">](./ima/vscode.mpg4)
+
     - [VS Code on Git]
+
 
 ## 查阅最新.NET Framework官方文档
 - [中文.NETFramework链接]
