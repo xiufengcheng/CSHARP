@@ -115,9 +115,139 @@
 <br>![](./img/CSHARP2.png)<br>
 3. 在左侧选择visual C#，在中间选择控制台应用程序，下方可以更改程序名称和程序的存储位置，然后点击右下方的确定按钮，就出现下图了：
 <br>![](./img/CSHARP3.png)<br>
-- 一段典型的C#代码
+### 一段典型的C#代码
 ```C#
+using System;        //using是关键字，引用一个System的名称空间
+using System.Collections.Generic;  //同上
+using System.Linq;    //同上
+using System.Text;    //同上
 
+namespace Mynamespace   //声明自己的名称空间，命名空间提供了一种从逻辑上组织类的方式，防止命名冲突。 
+{
+    class Myclass     //定义类型，隐私性默认值为protected，即对自己及派生类开放成员
+    {
+        static void Main(string[] args)    //定义一个类下的成员：Main方法 
+                                           //static表示该成员是静态的，即程序一开始就分配了内存，使用的时候不需要生成某个类型的对象
+                                           //void表示该成员没有返回值
+                                           //Main表示该方法是主方法，程序的'入口'
+                                           //string[] args表示命令行参数是字符串数组，即，你在命令行（黑框框）里输入的参数可以使多个字符串
+                                           //args是用来处理命令行参数的，即，运行这个程序的时候给它传的参数。是可选项，不是必须的。
+        {
+            System.Console.WriteLine("请输入num的值，回车结束");
+            int num = Console.Read();             //定义并获取变量(值类型)
+            String str = "not123";                //定义字符串类型变量（引用类型）
+     
+            if (num == 123)               //判断num是否有值           
+            { Console.WriteLine("num = " + num);}   //如果有值就输出num
+            else
+            { Console.WriteLine(str); }    //如果没有值就输出提示
+
+            Console.ReadKey();       //防止闪退
+        }
+    }
+
+}
+```
+### 再看一个典型算法例子
+```
+using System;
+
+namespace Yournamespace
+{
+    class Yourclass
+    {
+        static void Main()
+        {
+            int a = 1;
+            while (a == 1)
+            {
+                Console.Write("请输入待排序列个数n（输入完成后以换行符结束）：");
+                int n = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("请分别输入待排序元素（每个元素以换行符隔开）：");
+                int[] Sqlist = new int[n];
+                for (int i = 0; i < Sqlist.Length; i++)
+                {
+                    Sqlist[i] = Convert.ToInt32(Console.ReadLine());
+                }
+                Console.Write("请选择排序方法（1.直接插入排序 2.冒泡排序）：");
+                int number = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine();
+                if (number == 1) zhijiecharu(Sqlist);
+                if (number == 2) maopao(Sqlist);
+                Console.WriteLine("该序列从小到大为：");
+                Console.WriteLine();
+                for (int i = 0; i < Sqlist.Length; i++)
+                {
+                    Console.Write(Sqlist[i] + " ");
+                }
+                Console.WriteLine();
+                Console.WriteLine("******此次排序完成******");
+                Console.WriteLine();
+                Console.Write("是否继续排序（1.继续排序 0.退出排序）：");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine();
+            }
+            Console.WriteLine("排序结束！");
+            Console.ReadKey();
+
+        }
+        //直接插入排序
+        static void zhijiecharu(int[] Sqlist)
+        {
+            Console.WriteLine("******直接插入算法******");
+            Console.WriteLine();
+            for (int i = 1; i < Sqlist.Length; i++)
+            {
+                int t = Sqlist[i];
+                for (int j = i - 1; j >= 0; j--)
+                {
+                    if (t < Sqlist[j])
+                    {
+                        Sqlist[j + 1] = Sqlist[j];
+                        Sqlist[j] = t;
+                    }
+                }
+                Console.WriteLine("***第{0}次排序***", i);
+                for (int n = 0; n < Sqlist.Length; n++)
+                {
+                    Console.Write(Sqlist[n] + " ");
+                }
+                Console.WriteLine();
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+        //冒泡排序
+        static void maopao(int[] Sqlist)
+        {
+            Console.WriteLine("******冒泡排序******");
+            Console.WriteLine();
+            for (int i = 1; i < Sqlist.Length; i++)
+            {
+                int m;
+                for (int j = 0; j < Sqlist.Length - i; j++)
+                {
+                    if (Sqlist[j] > Sqlist[j + 1])
+                    {
+                        m = Sqlist[j + 1];
+                        Sqlist[j + 1] = Sqlist[j];
+                        Sqlist[j] = m;
+                    }
+                }
+                Console.WriteLine("***第{0}次排序***", i);
+                for (int n = 0; n < Sqlist.Length; n++)
+                {
+                    Console.Write(Sqlist[n] + " ");
+                }
+                Console.WriteLine();
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+    }
+
+
+}
 
 
 ```
