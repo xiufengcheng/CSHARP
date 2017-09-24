@@ -1,5 +1,5 @@
 ## <p align ="center">课程大纲（C/C++）</p>
-### [第一章 .NET与开发工具试用](./CHAPTER01/README.MD)
+### [第一章 .NET与开发工具介绍及试用](./CHAPTER01_.NET与开发工具介绍及试用/README.MD)
 1. .net简介
 2. Microsoft. NET 战略
 3. .NET遵循的因特网协议
@@ -10,7 +10,8 @@
 8. 学会查阅最新官方文档(**重点掌握**)
 9. 第一章特别部分：用VS Code + .NET Core运行第一个C#程序(**重点掌握**)
 
-### [第二章 生产力工具：github与开源](./CHAPTER02/README.MD)
+
+### [第二章 生产力工具：github与工作流](./CHAPTER02_Github与工作流/README.MD)
 1. github介绍
 2. 开一个github账户
 3. github淘金
@@ -22,55 +23,56 @@
 9. 团队协作
 
 
-### [第三章 生产力工具: Rational Rose与UML](./CHAPTER03/README.MD)
+### [第三章 生产力工具: 面向对象与UML](./CHAPTER03_面向对象与UML/README.MD)
 1. 面向对象程序设计介绍(类，对象，关系等)
 2. 
 
-### [第四章 C#小白阶段](./CHAPTER04/README.MD)
+### [第四章 C#基本语法](./CHAPTER04_C#基本语法/README.MD)
 1. 变量，常量和数据类型(code demo)
 2. 运算符(code demo)
 3. 流程控制(code demo)
 4. 方法(code demo)
 5. 类与对象的C#表示(code demo)
 
-### [第五章 C#小工阶段](./CHAPTER05/README.MD)
+### [第五章 接口与异常](./CHAPTER05_接口与异常/README.MD)
 
 1. 你逮到异常了吗？
 2. 你修复异常了吗？
 3. 接口是个好东西
 4. 稍微复杂一点的东西：委托和事件
 
-### [第六章 C#蓝领阶段](./CHAPTER06/README.MD)
+### [第六章 数据操作](./CHAPTER06_数据操作/README.MD)
 1. 连上Accsss数据库
 2. 连上SQL数据库
 3. ADO.NET中各种命令
 4. LINQ 
 5. 文件操作(.txt, .xml...)
 
-### [第七章 C#白领阶段](./CHAPTER04/README.MD)
+### [第七章 数据结构与算法设计](./CHAPTER07_数据结构与算法设计/README.MD)
 1. C#数组
 2. C#集合
 3. C#枚举
 4. C#结构体
 5. 用C#搞点数据结构与算法
-### [第八章 C#程序猿阶段](./CHAPTER04/README.MD)
+### [第八章 构建网站1](./CHAPTER08_构建网站1/README.MD)
 1. 创建Web网站(ASP.NET)
 2. ASP.NET控件
 3. ASP.NET 内置对象
 4. 引用前端框架AngularJS
 
-### [第九章 小神级：前端那些事]
+### [第九章 构建网站2](./CHAPTER09_构建网站2/README.MD)
 1. 不得不说的JavaScript
 2. 不得不说的CSS
 3. 不得不说的AngularJS
 4. 结合JS
 
-###### [第十章 深度程序猿级：云]
+### [第十章 Azure](./CHAPTER10_Azure/README.MD)
 1. Web和云
 2. 在Azure上部署服务
 3. 在Azure上创建数据库
 4. 畅游Azure
 5. 
+
 ### [第十一章 大神级:跨平台开发]
 1. 微软大法
 2. 深入理解.NET Core
