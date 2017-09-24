@@ -1,301 +1,116 @@
-# **第二章  .NET与开发工具介绍**
+# **第二章  Github与工作流**
+# 如何使用Github与他人协作
+## Step 1. 注册Github账号  
+* 建议各位使用QQ邮箱进行注册  
+* 注册号以后登录，会发现一个带有火箭的页面，它表   示着你的GitHub之旅即将启程  
+![](./img/2.png)
 
-## **.NET的由来**？
-<font color = Brown>这是一个商业故事，事情还得从80年代说起...当时个人电脑PC兴起，微软（[Microsoft], [DOS系统]）与因特尔（[Intel], 芯片制造商）组成的Wintel联盟所向披靡，它们踩在蓝色巨人[IBM]（PC机,大型机制造商,Fortran）的肩上发达起来......关于更早计算机应用的故事，请看电影[《隐藏人物》]。整个80到90年代，微软Windows操作系统一度控制着整个PC市场，获得巨大成功......
- <br><font color = black size =4> **Windows 1.0** (1983) </font> <br>![](./img/1.jpg) 
- <br><font color = black size =4> **Windows 2.0** (1987) </font> <br>![](./img/2.jpg) 
- <br><font color = black size =4> **Windows 3.0** (1992) </font> <br>![](./img/3.jpg) 
- <br><font color = black size =4> **Windows NT** (1993)  </font> <br>![](./img/5.jpg) 
-<br>
-&emsp;&emsp;微软的发展，被另外一家以生产浏览器软件而闻名的网景公司(Netscape)抢占了先机，它先于微软推出浏览器软件...当时，[SUN]公司以生产UNIX服务器为主，这种服务器可以用于网站建设，所以它始终坚持"网络就是电脑"
-(The Network Is the Computer)的信条。当时，SUN公司也尝试设计一种名为Java的程序语言，一开始准备将其用在家用电器市场，因为Java代码灵活小巧，可移植性强，并能够跨平台操作(只需要装一个JAVA虚拟环境JVM，不同平台安装不同版本的JVM，Java只负责将.java翻译成.class,jvm将.class翻译成机器码，这样JAVA程序就能够被各种机器识别)，不局限于某种操作系统。
- <br><br><font color = black size =4> **Java**</font> <br>![](./img/java.jpg) <br>
-1995年，互联网大行其道，SUN立刻意识到这是一个机会。因为Java适合用于编写浏览器软件。由于SUN当时对开发软件产品尚缺乏信心，所以它免费将Java放在网上，任由人们使用，没有想到此举使Java获得极大的成功和好评。微软为了打败网景，跟SUN达成某项交易，SUN允许微软使用Java语言来开发IE浏览器（就是我们当前用的IE浏览器），当IE成功问世时，微软将IE捆绑进操作系统中，使得很多电脑用户不得不使用IE作为缺省的浏览器软件。网景受到强烈的冲激，1996年春，王景拥有87%的市场占有率，1998年就降到40%，最后它也不得不免费供用户使用，终于在1998年11月，网景被美国在线(AOL)收购。<br><br>
-&emsp;&emsp;**那么原本是亲密战友的SUN与微软是如何翻脸无情？以至Java最后也被Windows无情地抛弃呢？**
+## Step 2. Follow别人
+* 就是用Git上方的搜索栏找人...找到他的主页，然后follow他，这样你的following里面就会有那个人。
+* 老师的主页在这里[github.com/xiufengcheng](github.com/xiufengcheng)
 
-&emsp;&emsp;话说网景被收购后，它的一个项目Mozilla被发扬光大，发展成了今天的Firefox, Chrome等优秀的浏览器。。。这是后话。微软打败了网景后，并没有对SUN公司放松警惕，1996年9月的某个星期日，微软资深的软件工程师提笔给比尔·盖茨写了一封信，在信中,他们非常恳切地提醒比尔·盖茨注意一个正在形成的威胁，这个威胁不是来自别人，正是其盟友SUN公司创建Java，这种语言允许“**一次编写，到处运行**”（如从IBM的大型机到Sun公司的Unix服务器，再到WindowsPC机都能运行，甚至在手机平台上也可以，而不需要针对每个计算机硬件和操作系统配置的不同而改动程序代码），并且这种语言在网络上是安全的，并且支持面向对象OO程序设计。。。在信中，他写到："如果Java仅只是一种语言，对微软是不会造成威胁的。但是事实上，Java绝不仅仅是一种语言，它是COM的替代者。"--而COM恰恰是Windows基于的编程模型。"<br>
-&emsp;&emsp;盖茨第二天就回信了："**这可把我吓坏了。我不清楚微软的操作系统要为Java的程序员提供什么样的东西，而这些东西将足够让它来取代我们的市场地位。这是应该最优先考虑的事情**。"(没想到，这封信成为几年后司法部针对微软的反托拉斯案的呈堂证供。)于是，Java成了Windows中不受欢迎的客人，微软开始对其进行清扫，SUN又岂是好惹的？一场针尖对麦芒的好戏就开场了...一直持续到现在...<br>
-&emsp;&emsp;**首先出场的，便是微软于2000年6月推出的.NET计划...**
-</font>
+## Setp 3. 在网页上新建一个仓库(Repository)  
+* 点击右上角的加号添加一个仓库（Repository）    
+![](./img/3.png)   
 
-## Microsoft. NET 战略
-- 由于Java的“**一次编程，到处使用**”特点，微软针对性的提出了.NET战略。
-- .NET战略基于[NGWS](Next Generation Windows Services)下一代视窗服务。
-- Microsoft预计, **.NET计划能将各种编程语言的程序员都统一到一个开发架构中来，使得他们的作品能运行在任何操作系统，任何浏览器上，并实现跨平台、跨语言开发。**
-- Microsoft基于以上理念打造.NET：
-    - .NET 是一个基于因特网和 WEB 的全新架构
-    - .NET 是用于通用服务（Universal Services）的一种构架
-    - .NET 可运行于任何平台上的任何浏览器中
-    - .NET 基于最新的 web 标准
-    - .NET 计划包含
-        - Windows 操作系统
-        - 一个新版本的 Office 
-        - **一个为开发人员准备的统一开发架构 - [.NET Framework]**
-    - 因此，.NET计划也可以理解为：微软公司为了维持其操作系统在市场中的垄断地位而采取的一个新措施。
+* 新建一个仓库    
+![](./img/4.png)   
 
-## .NET遵循的因特网协议
-- HTTP，因特网应用程序之间的通信协议
-- XML，用于在因特网应用程序之间交换数据的格式
-- SOAP，用于请求 Web Service 的标准格式
-- UDDI，用于搜索和发现 Web Service 的标准
+* 你会发现你多了一个仓库  
+![](./img/5.png)  
 
-## .NET Framework
-- <font color = black size =4> **.NET Framework体系** </font> <br>![](./img/12.jpg) 
-- .NET Framework是一个基于Web应用程序的基础架构，用于构建、开发以及运行Web Service和Web应用程序的**公共环境**。(类似于JDK=JVM+JRE)
-- 包含一套明确的技术规范和**一系列支持产品**,如下
-    1. **类库**（FCL, Framework Class Library）
-        - **[ASP.NET]**支持所有.NET类库，用来承载基于.NET创建的Web应用程序
-        - Web Service: 处理XML
-        - Web Form: 基于HTML的应用程序
-        - Windows Form: 丰富的Windows GUI应用
-        - Windows Console Application: 命令行程序
-        - Windows Service: Windows服务应用程序
-        - 组件库: 构建单独的程序集(组件)
-    2.  **公共语言运行时**(Common Language Runtime, CLR), 负责应用程序实际的执行，满足所有的应用程序的需求，
-        - 那么，CRL是如何实现语言无关性的呢？
-        - 由于它内置了一个中间语言库(.NET通用语言,MSIL)，首先将众多程序语言翻译成中间语言，然后通过CLR编译成及其语言：
-        <br><br><font color = black size =4> **How CRL works** </font> <br>![](./img/14.jpg)
+* 以后登录网站，进入自己的主页面，需要点击右上角的图像，选择Your Profile 就可以看到自己建的所有仓库了。  
+![](./img/6.png)  
 
-## .NET Framework发展历程
-- .NET Framework由最先开始的2.0版（类库中只包含ASP.NET,ADO.NET与WinForms）逐渐发展成到融合众多扩展包在内的4.5版本
-<br><br><font color = black size =4> **.NET Framework发展历程** </font> <br>![](./img/11.jpg)
-- 直到今天的开源时代，Microsoft在2014年11月12日开放了.NET Framework的源码，并推出了[.NET Core]。
-- .NET Core是一个模块化的开发栈，是参考.NET Framework重新开发的.NET实现，它是未来的所有.NET平台的基础。
-- 同时，.NET Core将.NET 扩展为可在 Linux 和 Mac OS 平台上运行。
-- .NET Core将基于MIT开源许可协议发布，其中将包括执行.NET代码所需的一切项目----CLR、JIT编译器、垃圾收集器（GC）和核心.NET基础类库。
-- 同时，微软还发布了Visual Studio 2013.NET（开源），使得VS在Linux和OS X系统上也能够运行了
-- 这样，开发者们将能够在全球三个最大的操作系统上使用.NET Framework了...
-<br><br><font color = black size =4> **.NET Core与. NET Framework的关系** </font> <br>![](./img/13.jpg)
-- **因此.NET Core可看成是.NET Framework实现真正跨平台开发的版本**。基于它，微软推出了.ASP.NET Core, Xamarin等等，组成了Core生态。。。
-<br><br><font color = black size =4>  </font> <br>![](./img/16.jpg)<br><br>
+## Step 4.将你的组员加为协作者
+* 只要你在你自己的仓库中点击Settings->Collaborators->加入你的组员，你的组员就可以下载，更新，上传项目了。
+![](./img/10.png)  
+![](./img/11.png)  
+* 注意，如果你在你的某个仓库中加了某人为自己的协作者(Collaborators)，那么他/她就有权利将自己的改动通过Push上传到你的仓库了哦~~也就是说，Collaborator是可以免审核直接修改你的代码的。
+* 这样的协作方式叫**协作者模式**，最简单的协作方式。但是有明显的缺点，那就是没有审核机制，任何人都可以在对一个仓库进行更改（跟新建一个文件夹，所有人在里面增删改查一回事），人一多(>5人)，就会有很多冲突问题。
+* 不过人少的时候这个方式很受用。
 
+## Step 5. Fork别人的仓库
+* 首先登陆你的账号
+* 找到一个人的主页，然后找到他的仓库
+* 老师的仓库在这里[https://github.com/xiufengcheng/DATASTRUCTURE](https://github.com/xiufengcheng/DATASTRUCTURE)
+* 点击右上角的Fork
+![](./img/fork.jpg)
+* 然后等待...等fork成功后，会自动跳转到你fork过来的你自己的远程仓库页面。
+* **注意**，**fork模式**，又称为**集中式工作流**，是Step 4.的**协作者模式**的升级版，顾名思义就是有了“小组长审核”这一步。因此，如果你们组只需要**协作者模式**进行开发，多人升级一个仓库，那么请无视这一步。下图很好的解释了fork模式的工作原理。（把'老师'改为'组长'）。
+![](./img/howtopullrequest.jpg) 
+* 图中，你首先找到老师(组长)的仓库A,然后fork仓库A,这样你的远程就有了一个仓库的映像A‘(A’是不会自动随着A的更新而更新的哦~)，然后你或其他组员不停的改动自己的仓库A'，等到改好后，Commit->Push/Pull->Pull Request. Commit是本地更改，Push/Pull是本地推到A',Pull是A'拉到本地，而Pull Reqeust是A'申请和A合体，明白？对，pull reqeust就是**求合体**。
 
-##.NET可以用来做什么
-- .NET可以做几乎任何事情
-<br>![](./img/安装什么.jpg)<br>
+## Step 6. 使用Git Desktop工具
+ GitHub有两种工具，一种是**git**本身，这个用百度搜索git第一个就是，点击下载，下载后右键菜单里就会出现**Git bash here**菜单，它是命令行工具，可以用它来做更加细致的工作。<br>
 
-## .NET Framework, .NET Core 与各版本Visual Studio之间的关系
-|Visual Studio版本  | .NET Framework版本 |适用OS       |C#版本| ASP.NET版本 | 新增功能 | 
-|:-----------------:| :---------------: |:----------: |:----:| :--------: |:--------:|  
-|Visual Studio 6.0  |无                 |windows NT   |无    | 无          |  MVC    |  
-|Visual Studio 2002 |.NET Framework 1.0 |Windows NT   |C#1.0 | 无          | .NET1.0        |       
-|Visual Studio 2003 |.NET Framework 1.1 |Windows XP   |C#1.2 | 无          | .NET1.1        |    
-|Visual Studio 2005 |.NET Framework 2.0 |Windows XP   |C#2.0 | 无          | 泛型     |  
-|Visual Studio 2008 |.NET Framework3.5  |Windows Vista|C#3.0 |ASP.NET 3.5  | WPF,WCF,LINQ |  
-|Visual Studio 2010 |.NET Framework4.0  |Windows 7    |C#4.0 |ASP.NET 4    | DLR,Silverligtht        |  
-|Visual Studio 2012 |.NET Framework4.5  |Windows 8    |C#5.0 |ASP.NET 4.5  |支持win8       |    
-|Visual Studio 2013 |.NET Framework4.6  |Windows 8    |C#6.0 |ASP.NET 4.5.1|支持app开发         |   
-|Visual Studio 2015 |.NET Fram+Core1.0  |Windows 10   |C#6.0 |ASP.NET 1.0  |Azure       |    
-|Visual Studio 2017 |.NET Core2.0       |Windows 10   |C#6.0 |ASP.NET 1.0  |Core        |    
+ 另一种是相对简单的图形界面操作工具**GitHub Desktop**，这两种工具的作用都是一样的，只是操作方法后者更为简单易用。在这里我们只介绍GitHub Desktop。
 
-## C#
-- 由上可知，.NET 框架支持多种语言，C#,VB,J#,C/C++
-- 与Java比较像(本来嘛，就是竞争产品)
-- C#是一种安全的、稳定的、简单的、优雅的，由C和C++衍生出来的面向对象的编程语言。它在继承C和C++强大功能的同时去掉了一些它们的复杂特性（例如没有宏和模版，不允许多重继承）。C#综合了VB简单的可视化操作和C++的高运行效率，以其强大的操作能力、优雅的语法风格、创新的语言特性和便捷的面向组件编程的支持成为.NET开发的首选语言。
-- C#的特点：
-    1. **完全面向对象**。
-    2. **支持分布式**。之所以有C#，是因为微软相信分布式应用程序是未来的趋势，即处理过程分布在客户机和服务器上。所以C#一出生就注定了能很好解决分布式问题。
-    3. 跟Java类似，C#代码经过编译后，成为了一种IL（中间语言）。在运行时，再把IL编译为平台专用的代码。
-    4. **健壮性**，C#在检查程序错误和编译与运行时错误一点也不逊于Java，C#也用了自动管理内存机制。
-    5. C#不像Java那样完全摒弃了指针和手动内存管理。C#默认情况下是不能使用指针的，程序员在有必要时可以打开指针来使用。这样可以保证编程的灵活性。
-    6. **安全性**：C#的安全性是有.net平台来提供的。C#代码编译后成为IL语言。是一种受控代码，.net提供类型安全检查等机制保证代码是安全的。
-    7. **可移植性**：由于C#使用类似Java的中间语言机制。使得C#也跟Java类似，可以很方便的移植到其他系统。在运行时，再把中间代码编译为适合特定机器的代码。
-    8. **解释性**：C#也是一种特殊的解释性语言。
-    9. **高性能**：C#把代码编译成中间语言后，可以高效的执行程序。
-    10. **多线程**：与Java类似，可以由一个主进程分出多个执行小任务的多线程。
-    11. **组件模式**：C#很适合组件开发。各个组件可以由其他语言实现的，然后集成在.net中。
-- C#是在Java流行起来后所诞生的一种新的语言。由于微软在操作系统上占有很大的优势。在以往的开发中累积了不少经验，所形成的.net平台，所以C#在Windows方面可以说比Java具有更大的优势。如果单纯从技术上来讲，C#在网络编程上可以与Java匹敌。C#还在Windows Forms也有一定的优势。
-- C#是一种非常类似于C++的语言，风格是更接近于Java，不管是C++程序员还是Java程序员，都可以很方便的转到C#上来。
-- C#的强大是依赖于.net的发展，而.net的发展是看微软在.net上的决心和投入有多少。
-- C#目前主要是应用在网络编程上，其他领域比如数据库、窗体编程，都逐渐在增大。
-- 在Visual Studio中创建C#程序（实际上是创建解决方案->在其中创建工程->在其中创建c#程序）
-1. 首先双击visual studio的图标，打开初始界面。注意，如果你的是第一次打开，可能初始化的时间有点长，请耐心等待。启动后会出现类似于下图所示界面：
-<br>![](./img/CSHARP1.png)<br>
-2. 然后在起始页点击新建项目（或者点击"文件"->新建->项目），出现下图的界面：
-<br>![](./img/CSHARP2.png)<br>
-3. 在左侧选择visual C#，在中间选择控制台应用程序，下方可以更改程序名称和程序的存储位置，然后点击右下方的确定按钮，就出现下图了：
-<br>![](./img/CSHARP3.png)<br>
-### 一段典型的C#代码
-```C#
-using System;        //using是关键字，引用一个System的名称空间
-using System.Collections.Generic;  //同上
-using System.Linq;    //同上
-using System.Text;    //同上
+### [在这里下载GitDesktop](https://desktop.github.com/)
 
-namespace Mynamespace   //声明自己的名称空间，命名空间提供了一种从逻辑上组织类的方式，防止命名冲突。 
-{
-    class Myclass     //定义类型，隐私性默认值为protected，即对自己及派生类开放成员
-    {
-        static void Main(string[] args)    //定义一个类下的成员：Main方法 
-                                           //static表示该成员是静态的，即程序一开始就分配了内存，使用的时候不需要生成某个类型的对象
-                                           //void表示该成员没有返回值
-                                           //Main表示该方法是主方法，程序的'入口'
-                                           //string[] args表示命令行参数是字符串数组，即，你在命令行（黑框框）里输入的参数可以使多个字符串
-                                           //args是用来处理命令行参数的，即，运行这个程序的时候给它传的参数。是可选项，不是必须的。
-        {
-            System.Console.WriteLine("请输入num的值，回车结束");
-            int num = Console.Read();             //定义并获取变量(值类型)
-            String str = "not123";                //定义字符串类型变量（引用类型）
-     
-            if (num == 123)               //判断num是否有值           
-            { Console.WriteLine("num = " + num);}   //如果有值就输出num
-            else
-            { Console.WriteLine(str); }    //如果没有值就输出提示
+* 安装完成后，你会看到桌面上的快捷方式  
+![](./img/7.png)  
 
-            Console.ReadKey();       //防止闪退
-        }
-    }
+* 第一次打开它时，输入你的GitHub的账号和密码  
+![](./img/8.png)  
 
-}
-```
-### 再看一个典型算法例子（排序）
-```
-using System;
+## Step 7. 克隆/下载仓库 (Clone or Download)
+* 你当然可以直接从网页上下载源代码。做法是：找到你fork过来的仓库(也可以是别人的任何仓库)，点击右边绿色的Clone or download
+![](./img/cloneordownload.jpg) 
+* 但是建议使用Gitdesktop进行下载，这样很多事情后来会比较便利。选择File->Clone Repository，将别人或你的远程仓库克隆到你的电脑上。
+* **注意**，如果你克隆的是**你的远程仓库**(你新建的或者你fork的仓库)，那么你将可以通过Pull/Push对**你的远程仓库**进行更改。
+* 但是，如果你克隆的是别人的仓库，你后来是没有权限Push到别人仓库上的，除非别人加你为Collaborator。
+* 所以，如果你们组打算用**Fork模式**进行协作，那么你首先需要Fork**组长的仓库**，然后克隆**你Fork过来的仓库**到**你的本地**，改改然后向组长发起pull reqeust。
+![](./img/9.png)  
+* 点击Clone开始克隆，克隆完成后，你的本地就有一个下载下来的仓库，并且这个仓库和远程仓库保持同步。
+* Clone是第一次的Pull/Fetch，一旦Clone，以后就不需要Clone了<br>
 
-namespace Yournamespace
-{
-    class Yourclass
-    {
-        static void Main()
-        {
-            int a = 1;
-            while (a == 1)
-            {
-                Console.Write("请输入待排序列个数n（输入完成后以换行符结束）：");
-                int n = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("请分别输入待排序元素（每个元素以换行符隔开）：");
-                int[] Sqlist = new int[n];
-                for (int i = 0; i < Sqlist.Length; i++)
-                {
-                    Sqlist[i] = Convert.ToInt32(Console.ReadLine());
-                }
-                Console.Write("请选择排序方法（1.直接插入排序 2.冒泡排序）：");
-                int number = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine();
-                if (number == 1) zhijiecharu(Sqlist);
-                if (number == 2) maopao(Sqlist);
-                Console.WriteLine("该序列从小到大为：");
-                Console.WriteLine();
-                for (int i = 0; i < Sqlist.Length; i++)
-                {
-                    Console.Write(Sqlist[i] + " ");
-                }
-                Console.WriteLine();
-                Console.WriteLine("******此次排序完成******");
-                Console.WriteLine();
-                Console.Write("是否继续排序（1.继续排序 0.退出排序）：");
-                a = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine();
-            }
-            Console.WriteLine("排序结束！");
-            Console.ReadKey();
+## Step 8. 更新本地仓库
+* 你可以在你的本地电脑上更改克隆过来的东西(增删改等操作)，这个谁都会哈。
 
-        }
-        //直接插入排序
-        static void zhijiecharu(int[] Sqlist)
-        {
-            Console.WriteLine("******直接插入算法******");
-            Console.WriteLine();
-            for (int i = 1; i < Sqlist.Length; i++)
-            {
-                int t = Sqlist[i];
-                for (int j = i - 1; j >= 0; j--)
-                {
-                    if (t < Sqlist[j])
-                    {
-                        Sqlist[j + 1] = Sqlist[j];
-                        Sqlist[j] = t;
-                    }
-                }
-                Console.WriteLine("***第{0}次排序***", i);
-                for (int n = 0; n < Sqlist.Length; n++)
-                {
-                    Console.Write(Sqlist[n] + " ");
-                }
-                Console.WriteLine();
-                Console.WriteLine();
-            }
-            Console.WriteLine();
-        }
-        //冒泡排序
-        static void maopao(int[] Sqlist)
-        {
-            Console.WriteLine("******冒泡排序******");
-            Console.WriteLine();
-            for (int i = 1; i < Sqlist.Length; i++)
-            {
-                int m;
-                for (int j = 0; j < Sqlist.Length - i; j++)
-                {
-                    if (Sqlist[j] > Sqlist[j + 1])
-                    {
-                        m = Sqlist[j + 1];
-                        Sqlist[j + 1] = Sqlist[j];
-                        Sqlist[j] = m;
-                    }
-                }
-                Console.WriteLine("***第{0}次排序***", i);
-                for (int n = 0; n < Sqlist.Length; n++)
-                {
-                    Console.Write(Sqlist[n] + " ");
-                }
-                Console.WriteLine();
-                Console.WriteLine();
-            }
-            Console.WriteLine();
-        }
-    }
+## Step 9. 将本地更新推送(Push)到你的远程仓库
+* 更改好后，你可以将本地版本Push到**你的远程仓库**（无论是你自建的还是Fork别人的仓库）上
+* 如何Push呢？
+* 很简单，本地代码有任何的变动，GitHub Desktop是会捕捉到的。 
+![](./img/12.png)
+* 其中红色带减号的部分表示删除的内容，绿色加号部分表示增加的内容 
+* 在左下角的summary中填上你更改的说明情况，然后点击左下角的Commit按钮  
+![](./img/13.png)
+* 然后再点击右上角的Push按钮  
+![](./img/14.png)  
+* 这里在说一遍：**Commit是提交到本地更新（还没有上传到远程），Push则是从本地刷远程。**
 
+## Step 10. 将本地更新推送(Push)到别人的远程仓库
+* 其实，你可以Push的远程仓库有两类，一类是**你的远程仓库**(无论是自己建的还是Fork别人的仓库)，一类是别人的仓库(前提是这些仓库加了你为Collaborator) 。
 
-}
+## Step 11. 将远程仓库同步到本地（Fetch/Pull）
+* 这里的Fetch也就是Pull, 点击Fetch按钮(和Push按钮的位置一样)，就可以刷新本地仓库了！
+![](./img/15.png)
 
+## Step 12. 保持你的fork仓库与别人仓库的同步更新(这一步在提交Pull Request之前很有用)
+* 经常看到许多人，只会fork一次，提交过一次修改就不知怎么办了！而原作者是非常勤奋的，一天会提交N次，一个星期后许多文件都改动过了，而那些代码贡献者不可能一个个跟着修改。 因此我们还是用到上方的pull request按钮。
+* 选中自己fork过来的项目，然后选择pull request
+![](./img/反向.jpg)
+* 然后选择Switching the base,把你的fork项目作为base,把人家的作为head，总之反转过来。
+* 然后Merge，这样你就更新了的fork仓库。
+![](./img/反向2.jpg)
 
-```
+## Step 13. 向原创者发起Pull Request  
+* Git是一个很强大的工具，其中重要的一点就是可向任何人发起Pull Request，**下图又闪亮登场！足以说明重要程度！**
+![](./img/howtopullrequest.jpg) 
 
-## ASP.NET Core
-- [ASP.NET Core 介绍和项目解读](http://www.cnblogs.com/liangxiaofeng/p/5795239.html)
+* 首先，你必须fork别人的某个仓库，这样，你的远程仓库中拷贝了一份和别人一模一样的仓库。怎样区分是你自己的还是别人fork过来的仓库呢？看下图。找出图标的区别。  
+![](./img/17.png)  
 
-### IDEs
+* 然后，Push到自己远程工作做完后，你的**远程仓库**和**原作者的远程仓库**是两个版本了不是？
+* 这时候，你就需要发起Pull Request到原作者，请求他合并(Merge)
+* 具体做法：网页上进入你fork过来的远程仓库，点击New Pull Request  
+![](./img/18.png)
+* 填写该填写的东西，提交给原创作者。接下来的事就交给原创作者自己定夺了
 
-- **Visual Studio 2017** [download](https://www.visualstudio.com/zh-hans/)
-    - **Community版(推荐)**
-    - Professional版
-    - Enterprise版
-- **Visual Studio Code** [download](https://code.visualstudio.com/)
-    - **轻量级编辑器，微软良心产品，推荐结合.NET Core使用**:purple_heart:
-    - [VS Code 使用手册](https://code.visualstudio.com/docs)
-    - [如何使用VSCode运行第一个C#程序<img src="./img/video.png" height="15">](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core)
-    - [VS Code on Git](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md)
+* 期间，可能还有原作者不满意，退回修改的过程
 
+* 有关更详细的git指南请参考
+[**Git工作流**](https://github.com/xirong/my-git/blob/master/git-workflow-tutorial.md)  
 
-## 查阅最新.NET Framework官方文档
-- [中文总参考](https://docs.microsoft.com/zh-cn/dotnet/)
-- [英文总参考](https://docs.microsoft.com/en-us/dotnet/)
-- [中文.NETFramework文档](https://docs.microsoft.com/zh-cn/dotnet/framework/)
-- [英文.NETFramework文档](https://docs.microsoft.com/en-us/dotnet/framework/)
-
-
-## 用VS Code + .NET Core运行第一个C#程序
-
-<!-- 下面是本文档中用到的链接 --->
-[《隐藏人物》]: https://baike.baidu.com/item/%E9%9A%90%E8%97%8F%E4%BA%BA%E7%89%A9/2454257?fr=aladdin
-[DOS系统]:http://www.pc811.com/xitong/26367.html
-[Microsoft]:https://www.microsoft.com/
-[Intel]:https://www.intel.com/
-[IBM]:https://www.ibm.com/
-[微软与Netscape之间的恩怨]: https://en.wikipedia.org/wiki/Netscape
-[SUN]:https://www.oracle.com/sun/index.html
-[NGWS]:https://docs.microsoft.com/en-us/dotnet/framework/
-[.NET Framework]:https://docs.microsoft.com/en-us/dotnet/framework/
-[中文.NETFramework链接]:https://docs.microsoft.com/zh-cn/dotnet/framework/
-[英文.NETFramework链接]:https://docs.microsoft.com/en-us/dotnet/framework/
-[ASP.NET]:https://docs.microsoft.com/zh-cn/aspnet/core/
-[Visual Studio]:https://www.visualstudio.com/zh-hans/
-[Visual Studio Code]:https://www.visualstudio.com/zh-hans/
-[.NET Core]: https://docs.microsoft.com/zh-cn/dotnet/core/
-[.NET Core document]:https://docs.microsoft.com/zh-cn/dotnet/core/
-[所有产品目录]: https://docs.microsoft.com/zh-cn/dotnet/
-[VS Code on Git]:https://github.com/Microsoft/vscode/
-[Core时将基于MIT开源许可协议发布]:https://github.com/dotnet/coreclr
-[VS Code 使用手册]:https://code.visualstudio.com/docs
 
