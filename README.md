@@ -10,7 +10,7 @@
 ### 手机：15071337806
 ### 网站(建设中)：[www.showfeng.com](http://showfeng.com)
 ### 群号: 853311457 (进群后请实名)
-![](./CHAPTER01_.NET与开发工具介绍及试用/img/21.png)
+![](./CHAPTER01_.NET与开发工具介绍及试用/img/21.jpg)
 
 ---
 
