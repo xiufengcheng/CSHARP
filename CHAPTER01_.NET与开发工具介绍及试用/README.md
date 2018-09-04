@@ -54,7 +54,7 @@
     2.  **公共语言运行时**(Common Language Runtime, CLR), 负责应用程序实际的执行，满足所有的应用程序的需求，
         - 那么，CRL是如何实现语言无关性的呢？
         - 由于它内置了一个中间语言库(.NET通用语言,MSIL)，首先将众多程序语言翻译成中间语言，然后通过CLR编译成及其语言：
-        <br><br><font color = black size =4> **How CRL works** </font> <br>![](./img/14.jpg)
+        <br><br><font color = black size =4> **How CLR works** </font> <br>![](./img/14.jpg)
 
 ## .NET Framework发展历程
 - .NET Framework由最先开始的2.0版（类库中只包含ASP.NET,ADO.NET与WinForms）逐渐发展成到融合众多扩展包在内的4.5版本
@@ -66,7 +66,7 @@
 - 同时，微软还发布了Visual Studio 2013.NET（开源），使得VS在Linux和OS X系统上也能够运行了
 - 这样，开发者们将能够在全球三个最大的操作系统上使用.NET Framework了...
 <br><br><font color = black size =4> **.NET Core与. NET Framework的关系** </font> <br>![](./img/13.jpg)
-- **因此.NET Core可看成是.NET Framework实现真正跨平台开发的版本**。基于它，微软推出了.ASP.NET Core, Xamarin等等，组成了Core生态。。。
+- **因此.NET Core可看成是.NET Framework实现真正跨平台开发的版本**。基于它，微软推出了.ASP.NET Core, 形成了基于.net Core的微服务框架。。。
 <br><br><font color = black size =4>  </font> <br>![](./img/16.jpg)<br><br>
 
 
